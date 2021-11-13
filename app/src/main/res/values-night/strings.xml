@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="add_entry">Add a new entry</string>
+  <string name="title_label">Title</string>
+  <string name="date">Date</string>
+  <string name="start_time">Start Time</string>
+  <string name="end_time">End Time</string>
+  <string name="save_label">Save</string>
+  <string name="to">To</string>
+  <string name="record_entry">Record Entry</string>
+  <string name="share">Share</string>
+  <string name="info">Information</string>
+  <string name="delete">Delete</string>
+  <string name="group">Group</string>
+  <string name="rs">Rs.</string>
+  <string name="amount">Amount</string>
+  <string name="total">Total :</string>
+  <string name="edit">Edit</string>
+    <string name="desc">Description</string>
+  <string name="edit_entry">Edit Entry</string>
+    <string name="superscript">super</string>
+  <string name="month_year">month, year</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_entry_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFD9CE">
+
+  <TextView
+      android:id="@+id/record_entry"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      android:layout_marginStart="20dp"
+      android:text="@string/record_entry"
+      android:textAppearance="@style/TextAppearance.AppCompat.Large"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <Button
+      android:id="@+id/btn_entry_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:text="@string/date"
+      android:textSize="15sp"
+      android:layout_margin="15dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/edit_desc"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginTop="25dp"
+      android:autofillHints="@string/desc"
+      android:ems="10"
+      android:hint="@string/desc"
+      android:minHeight="48dp"
+      android:paddingHorizontal="15dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/btn_entry_date" />
+
+  <ScrollView
+      android:id="@+id/edit_text_view"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edit_desc"
+      app:layout_constraintBottom_toTopOf="@id/btn_save">
+  <EditText
+      android:id="@+id/edit_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="10dp"
+      android:layout_marginVertical="15dp"
+      android:autofillHints="@string/desc"
+      android:ems="10"
+      android:hint="@string/desc"
+      android:minHeight="48dp"
+      android:paddingHorizontal="15dp"/>
+  </ScrollView>
+
+  <Button
+      android:id="@+id/btn_save"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="12dp"
+      android:text="@string/save_label"
+      android:layout_marginBottom="20dp"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

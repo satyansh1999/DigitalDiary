@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/monthFragment">
+
+  <fragment
+      android:id="@+id/DayFragment"
+      android:name="androidsamples.java.Diary.DayFragment"
+      android:label="fragment_entry_list"
+      tools:layout="@layout/fragment_day">
+    <action
+        android:id="@+id/addEntryAction"
+        app:destination="@id/DayEditFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <argument
+        android:name="group"
+        app:argType="java.util.UUID" />
+    <action
+        android:id="@+id/action_DayFragment_to_dayViewFragment"
+        app:destination="@id/dayViewFragment"
+        app:enterAnim="@android:anim/fade_in"
+        app:popExitAnim="@android:anim/fade_out" />
+  </fragment>
+
+  <fragment
+      android:id="@+id/DayEditFragment"
+      android:name="androidsamples.java.Diary.DayEditFragment"
+      android:label="fragment_entry_details"
+      tools:layout="@layout/fragment_day_edit">
+    <argument
+        android:name="entryId"
+        app:argType="java.util.UUID" />
+    <argument
+        android:name="edit"
+        app:argType="boolean" />
+    <argument
+        android:name="group"
+        app:argType="java.util.UUID" />
+    <action
+        android:id="@+id/datePickerAction"
+        app:destination="@id/DatePickerFragment" />
+  </fragment>
+
+  <fragment
+      android:id="@+id/monthFragment"
+      android:name="androidsamples.java.Diary.MonthFragment"
+      android:label="fragment_entry_groups"
+      tools:layout="@layout/fragment_month">
+    <action
+        android:id="@+id/groupSelectedAction"
+        app:destination="@id/DayFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <action
+        android:id="@+id/monthAddedAction"
+        app:destination="@id/monthPicker"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+  </fragment>
+  <dialog
+      android:id="@+id/DatePickerFragment"
+      android:name="androidsamples.java.Diary.DatePickerFragment">
+    <argument
+        android:name="edit"
+        app:argType="boolean" />
+  </dialog>
+  <fragment
+      android:id="@+id/monthPicker"
+      android:name="androidsamples.java.Diary.MonthPicker"
+      android:label="MonthPicker"
+      tools:layout="@layout/fragment_month_picker">
+    <argument
+        android:name="id"
+        app:argType="java.util.UUID" />
+    <argument
+        android:name="edit"
+        app:argType="boolean" />
+  </fragment>
+  <fragment
+      android:id="@+id/dayViewFragment"
+      android:name="androidsamples.java.Diary.DayViewFragment"
+      android:label="DayViewFragment"
+      tools:layout="@layout/fragment_day_view">
+    <action
+        android:id="@+id/action_dayViewFragment_to_DayEditFragment"
+        app:destination="@id/DayEditFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <argument
+        android:name="id"
+        app:argType="java.util.UUID" />
+  </fragment>
+</navigation>
