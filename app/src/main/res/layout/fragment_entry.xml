@@ -66,16 +66,25 @@
           app:layout_constraintStart_toEndOf="@id/diary_item_title"
           app:layout_constraintTop_toBottomOf="@id/diary_item_title2" />
 
-      <ImageButton
+      <LinearLayout
           android:id="@+id/diary_item_delete"
-          android:layout_width="48dp"
-          android:layout_height="48dp"
-          android:background="@android:drawable/ic_delete"
-          android:backgroundTint="#FF1100"
-          android:contentDescription="@string/delete"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
           app:layout_constraintEnd_toEndOf="parent"
-          app:layout_constraintTop_toTopOf="parent"
-          tools:ignore="TouchTargetSizeCheck" />
+          app:layout_constraintTop_toTopOf="parent">
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/ic_delete"
+            android:backgroundTint="@color/fragment_button"
+            android:contentDescription="@string/delete"
+            android:clickable="false"
+            tools:ignore="TouchTargetSizeCheck" />
+      </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -18,6 +18,7 @@
   <string name="edit">Edit</string>
     <string name="desc">Description</string>
   <string name="edit_entry">Edit Entry</string>
-    <string name="superscript">super</string>
+  <string name="superscript">super</string>
   <string name="month_year">month, year</string>
+  <string name="title_activity_lock_screen">LockScreenActivity</string>
 </resources>

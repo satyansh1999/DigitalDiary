@@ -11,15 +11,26 @@
       android:supportsRtl="true"
       android:theme="@style/Theme.JournalApp"
       android:fullBackupContent="@xml/backup_descriptor">
-    <activity
-        android:name="androidsamples.java.Diary.MainActivity"
-        android:exported="true">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
+      <activity
+          android:name="androidsamples.java.Diary.LockScreenActivity"
+          android:exported="true"
+          android:label="@string/title_activity_lock_screen"
+          android:theme="@style/Theme.JournalApp.NoActionBar" >
+        <intent-filter>
+          <action android:name="android.intent.action.MAIN" />
+          <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+      </activity>
+
+      <activity
+          android:name="androidsamples.java.Diary.MainActivity"
+          android:exported="true">
+        <intent-filter>
+          <action android:name="android.intent.action.VIEW" />
+        </intent-filter>
+      </activity>
+
   </application>
 
 </manifest>

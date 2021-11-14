@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -132,7 +133,7 @@ public class DayFragment extends Fragment {
     private final TextView mMonthYear;
     private final TextView mDesc;
     private final TextView mText;
-    private final ImageButton mDel;
+    private final LinearLayout mDel;
 
     public EntryViewHolder(@NonNull View itemView) {
       super(itemView);

@@ -1,5 +1,6 @@
 package androidsamples.java.Diary;
 
+import android.annotation.SuppressLint;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,7 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity implements MonthFragment.GroupCallbacks, DayFragment.Callbacks {
   private static final String TAG = "MainActivity";
+  @SuppressLint("StaticFieldLeak")
   public static NavController navController;
   private static HashMap<Integer, String> monthMap = new HashMap<>();
   public static UUID grp = UUID.fromString("843e44ed-6e97-4930-858f-12ead8dea0bf");

@@ -23,8 +23,10 @@
     <action
         android:id="@+id/action_DayFragment_to_dayViewFragment"
         app:destination="@id/dayViewFragment"
-        app:enterAnim="@android:anim/fade_in"
-        app:popExitAnim="@android:anim/fade_out" />
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"
+        app:popEnterAnim="@anim/fade_in"
+        app:popExitAnim="@anim/fade_out" />
   </fragment>
 
   <fragment

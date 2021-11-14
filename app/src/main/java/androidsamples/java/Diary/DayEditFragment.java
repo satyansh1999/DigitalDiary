@@ -56,7 +56,6 @@ public class DayEditFragment extends Fragment {
       mEntry = new DiaryEntry();
       entryId = mEntry.getUid();
       mEntry.setGroup(group);
-      appViewModel.insert(mEntry);
     }
   }
 
@@ -89,11 +88,10 @@ public class DayEditFragment extends Fragment {
     }
     else{
       Calendar cal = Calendar.getInstance();
-      SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
-      mEditDate.setText(simpleDateFormat.format(cal.getTime()));
       day = cal.get(Calendar.DAY_OF_MONTH);
       month = cal.get(Calendar.MONTH);
       year = cal.get(Calendar.YEAR);
+      mEditDate.setText(day+"-"+(month+1)+"-"+year);
     }
   }
 
@@ -141,7 +139,8 @@ public class DayEditFragment extends Fragment {
     mEntry.setDay(day);
     mEntry.setMonth(month);
     mEntry.setYear(year);
-    appViewModel.update(mEntry);
+    if (edit) appViewModel.update(mEntry);
+    else appViewModel.insert(mEntry);
     Toast.makeText(getContext(), "Item added", Toast.LENGTH_SHORT).show();
     requireActivity().onBackPressed();
   }
