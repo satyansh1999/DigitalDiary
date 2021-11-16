@@ -8,20 +8,20 @@
     android:layout_marginHorizontal="15dp"
     android:layout_marginVertical="8dp"
     app:cardCornerRadius="10dp"
-    app:cardElevation="15dp">
+    app:cardElevation="5dp">
 
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:background="@color/design_default_color_secondary"
+      android:background="@color/fragment_entry_background"
       android:orientation="vertical"
-      android:backgroundTint="#EFD9CE"
       android:paddingHorizontal="5dp"
       android:paddingVertical="5dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColor="@color/fragment_entry_text">
 
       <TextView
           android:id="@+id/diary_item_title"
@@ -30,7 +30,6 @@
           android:letterSpacing="0.1"
           android:text="@string/title_label"
           android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-          android:textColor="#25283D"
           android:textStyle="italic"
           android:layout_marginStart="10dp"
           app:layout_constraintBottom_toBottomOf="parent"
@@ -45,7 +44,6 @@
           android:padding="2dp"
           android:text="@string/superscript"
           android:textAppearance="@style/TextAppearance.AppCompat.Small"
-          android:textColor="#25283D"
           android:textStyle="italic"
           android:layout_marginStart="3dp"
           app:layout_constraintStart_toEndOf="@id/diary_item_title"
@@ -61,7 +59,6 @@
           android:layout_marginStart="10dp"
           android:text="@string/month_year"
           android:textAppearance="@style/TextAppearance.AppCompat.Small"
-          android:textColor="#25283D"
           android:textStyle="italic"
           app:layout_constraintStart_toEndOf="@id/diary_item_title"
           app:layout_constraintTop_toBottomOf="@id/diary_item_title2" />
@@ -72,6 +69,7 @@
           android:layout_height="wrap_content"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintTop_toTopOf="parent">
+
         <ImageButton
             android:layout_width="20dp"
             android:layout_height="20dp"
@@ -95,7 +93,7 @@
           android:paddingHorizontal="12dp"
           android:paddingVertical="2dp"
           android:text="@string/desc"
-          android:textColor="#25283D"
+          android:textColor="@color/fragment_entry_text"
           android:textAllCaps="true"
           android:textStyle="italic"
           android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
@@ -105,8 +103,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="30dp"
-        android:layout_marginVertical="5dp"
-        android:background="#86FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/fragment_entry_text_background"
         android:paddingVertical="5dp"
         android:paddingHorizontal="10dp"/>
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#25283D">
+    android:background="@color/fragment_month_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,15 +14,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="#EFD9CE">
+        android:background="@color/fragment_entry_background">
 
         <EditText
             android:id="@+id/month_picker_year"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Year"
+            android:hint="@string/year"
             android:inputType="number"
-            android:layout_marginTop="5dp"
+            android:paddingVertical="15dp"
             android:textAlignment="center"/>
 
         <ScrollView
@@ -39,120 +39,144 @@
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="January"
+                    android:text="@string/january"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toTopOf="parent"/>
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_feb"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="February"
+                    android:text="@string/february"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_jan"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_jan"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_mar"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="March"
+                    android:text="@string/march"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_feb"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_feb"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_apr"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="April"
+                    android:text="@string/april"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_mar"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_mar"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_may"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="May"
+                    android:text="@string/may"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_apr"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_apr"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_jun"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="June"
+                    android:text="@string/june"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_may"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_may"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_jul"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="July"
+                    android:text="@string/july"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_jun"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_jun"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_aug"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="August"
+                    android:text="@string/august"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_jul"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_jul"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_sep"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="Septemeber"
+                    android:text="@string/september"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_aug"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_aug"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_oct"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="Octoper"
+                    android:text="@string/october"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_sep"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_sep"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_nov"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="November"
+                    android:text="@string/november"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_oct"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_oct"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
                 <Button
                     android:id="@+id/btn_dec"
                     android:layout_width="match_parent"
                     android:layout_height="70dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_marginVertical="2dp"
-                    android:text="December"
+                    android:text="@string/december"
                     android:textAppearance="@style/TextAppearance.AppCompat.Large"
                     android:letterSpacing="0.2"
-                    app:layout_constraintTop_toBottomOf="@id/btn_nov"/>
+                    app:layout_constraintTop_toBottomOf="@id/btn_nov"
+                    android:backgroundTint="@color/fragment_entry_text"
+                    android:textColor="@color/fragment_entry_background"/>
             </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
     </LinearLayout>

@@ -15,7 +15,7 @@
       <activity
           android:name="androidsamples.java.Diary.LockScreenActivity"
           android:exported="true"
-          android:label="@string/title_activity_lock_screen"
+          android:label="DigitalDiary"
           android:theme="@style/Theme.JournalApp.NoActionBar" >
         <intent-filter>
           <action android:name="android.intent.action.MAIN" />

@@ -1,6 +1,7 @@
 package androidsamples.java.Diary;
 
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -80,13 +82,24 @@ public class MonthFragment extends Fragment{
 
         public EntryViewHolder(@NonNull View itemView) {
             super(itemView);
-
             mTxtTitle = itemView.findViewById(R.id.txt_item_title_group);
             itemView.setOnClickListener(this::launchJournalEntryFragment);
 
             itemView.findViewById(R.id.edit_group).setOnClickListener( v ->{
                 NavDirections action = MonthFragmentDirections.monthAddedAction(mEntry.getUid(),true);
                 MainActivity.navController.navigate(action);
+            });
+
+            itemView.findViewById(R.id.delete_group).setOnClickListener( v ->{
+                AlertDialog.Builder alert = new AlertDialog.Builder(getContext());
+                alert.setTitle("Delete Folder");
+                alert.setMessage("Are you sure you want to delete " + MainActivity.getMonthYear(mEntry.getMonth(),mEntry.getYear()) + "?");
+                alert.setPositiveButton(android.R.string.yes, (dialog, which) -> {
+                    mAppViewModel.deleteGroup(mEntry.getUid());
+                    Toast.makeText(getContext(), mEntry.getUid() + " deleted", Toast.LENGTH_SHORT).show();
+                });
+                alert.setNegativeButton(android.R.string.no, (dialog, which) -> dialog.dismiss());
+                alert.show();
             });
         }
 

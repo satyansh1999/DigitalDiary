@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/design_default_color_secondary"
+    android:background="@color/fragment_entry_background"
     android:orientation="vertical"
-    android:backgroundTint="#EFD9CE"
     android:paddingHorizontal="10dp"
     android:paddingTop="5dp"
     android:paddingBottom="10dp"
@@ -23,7 +22,7 @@
             android:letterSpacing="0.1"
             android:text="@string/title_label"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
-            android:textColor="#25283D"
+            android:textColor="@color/fragment_entry_text"
             android:textStyle="italic"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +37,7 @@
             android:padding="2dp"
             android:text="@string/superscript"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#25283D"
+            android:textColor="@color/fragment_entry_text"
             android:textStyle="italic"
             android:layout_marginStart="3dp"
             app:layout_constraintStart_toEndOf="@id/diary_item_view_title"
@@ -54,7 +53,7 @@
             android:layout_marginStart="20dp"
             android:text="@string/month_year"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="#25283D"
+            android:textColor="@color/fragment_entry_text"
             android:textStyle="italic"
             app:layout_constraintStart_toEndOf="@id/diary_item_view_title"
             app:layout_constraintTop_toBottomOf="@id/diary_item_view_title2" />
@@ -66,7 +65,7 @@
         android:layout_height="1dp"
         android:layout_marginEnd="120dp"
         android:layout_marginStart="10dp"
-        android:background="#999999"
+        android:background="@color/fragment_entry_partition"
         android:layout_marginBottom="5dp"/>
 
     <TextView
@@ -76,7 +75,7 @@
         android:paddingHorizontal="12dp"
         android:paddingVertical="2dp"
         android:text="@string/desc"
-        android:textColor="#25283D"
+        android:textColor="@color/fragment_entry_text"
         android:textAllCaps="true"
         android:textStyle="italic"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
@@ -84,7 +83,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#86FFFFFF"
+        android:background="@color/fragment_entry_text_background"
         android:layout_margin="10dp">
         <TextView
             android:id="@+id/diary_item_view_text"

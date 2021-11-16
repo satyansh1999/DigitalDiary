@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#25283D">
+    android:background="@color/fragment_day_background">
 
   <TextView
       android:id="@+id/txt_grp"
@@ -14,7 +14,7 @@
       android:paddingHorizontal="10dp"
       android:textStyle="bold"
       android:textSize="25sp"
-      android:textColor="#EFD9CE"
+      android:textColor="@color/fragment_day_text"
       android:layout_marginHorizontal="10dp"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent" />
@@ -49,6 +49,7 @@
       android:clickable="true"
       android:contentDescription="@string/add_entry"
       android:focusable="true"
+      android:backgroundTint="@color/fragment_floating_action"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:srcCompat="@android:drawable/ic_input_add" />

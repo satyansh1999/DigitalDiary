@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-  <color name="purple_200">#FFBB86FC</color>
-  <color name="purple_500">#FF6200EE</color>
-  <color name="purple_700">#FF3700B3</color>
-  <color name="teal_200">#FF03DAC5</color>
-  <color name="teal_700">#FF018786</color>
   <color name="black">#FF000000</color>
   <color name="white">#FFFFFFFF</color>
-  <color name="fragment_text">#25283D</color>
-  <color name="fragment_button">#9E2A2B</color>
   <color name="fragment_primary">#EFD9CE</color>
+
+  <color name="fragment_day_background">#25283D</color>
+  <color name="fragment_month_background">#25283D</color>
+  <color name="fragment_entry_background">#EFD9CE</color>
+  <color name="fragment_entry_month_background">#EFD9CE</color>
+  <color name="fragment_day_edit_background">#EFD9CE</color>
+  <color name="fragment_day_edit_date">#25283D</color>
+  <color name="fragment_entry_text_background">#86FFFFFF</color>
+
+  <color name="fragment_text">#25283D</color>
+  <color name="fragment_day_text">#EFD9CE</color>
+  <color name="fragment_month_text">#EFD9CE</color>
+  <color name="fragment_entry_text">#25283D</color>
+  <color name="fragment_entry_month_text">#25283D</color>
+
+  <color name="fragment_button">#9E2A2B</color>
+  <color name="fragment_floating_action">#9E2A2B</color>
+  <color name="fragment_entry_partition">#999999</color>
 </resources>
+
+<!--
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+  <color name="fragment_primary">#D8F3DC</color>
+
+  <color name="fragment_day_background">#D1EDDB</color>
+  <color name="fragment_day_text">#1B4332</color>
+  <color name="fragment_day_edit_background">#EFD9CE</color>
+
+  <color name="fragment_entry_background">#AEDCC3</color>
+  <color name="fragment_entry_text">#2D6A4F</color>
+  <color name="fragment_entry_text_background">#D8F3DC</color>
+
+  <color name="fragment_month_background">#FFCCD5</color>
+  <color name="fragment_month_text">#EFD9CE</color>
+  <color name="fragment_entry_month_text">#2D6A4F</color>
+  <color name="fragment_entry_month_background">#AEDCC3</color>
+
+  <color name="fragment_text">#2D6A4F</color>
+
+  <color name="fragment_button">#40916C</color>
+  <color name="fragment_floating_action">#40916C</color>
+  <color name="fragment_entry_partition">#1B4332</color>
+</resources>
+-->
