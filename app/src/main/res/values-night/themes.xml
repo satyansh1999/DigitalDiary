@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
   <!-- Base application theme. -->
-  <style name="Theme.JournalApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+  <style name="Theme.DigitalDiary" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
     <!-- Primary brand color. -->
     <item name="colorPrimary">@color/fragment_text</item>
     <item name="colorPrimaryVariant">@color/fragment_primary</item>
@@ -13,7 +13,7 @@
     <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
     <!-- Customize your theme here. -->
   </style>
-  <style name="Theme.JournalApp.NoActionBar">
+  <style name="Theme.DigitalDiary.NoActionBar">
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>

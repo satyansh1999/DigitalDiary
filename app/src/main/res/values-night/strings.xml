@@ -35,4 +35,6 @@
   <string name="december">December</string>
     <string name="text">Text</string>
     <string name="year">Year</string>
+    <string name="import_data">Import Data</string>
+  <string name="delete_data">Delete Data</string>
 </resources>

@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="androidsamples.java.Diary">
+    package="androidsamples.java.DigitalDiary">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 
   <application
-      android:name="androidsamples.java.Diary.DiaryApplication"
+      android:name=".DiaryApplication"
       android:allowBackup="true"
       android:icon="@mipmap/ic_launcher"
       android:label="DigitalDiary"
       android:roundIcon="@mipmap/ic_launcher_round"
       android:supportsRtl="true"
-      android:theme="@style/Theme.JournalApp"
+      android:theme="@style/Theme.DigitalDiary"
       android:fullBackupContent="@xml/backup_descriptor">
 
       <activity
-          android:name="androidsamples.java.Diary.LockScreenActivity"
+          android:name=".LockScreenActivity"
           android:exported="true"
           android:label="DigitalDiary"
-          android:theme="@style/Theme.JournalApp.NoActionBar" >
+          android:theme="@style/Theme.DigitalDiary.NoActionBar" >
         <intent-filter>
           <action android:name="android.intent.action.MAIN" />
           <category android:name="android.intent.category.LAUNCHER" />
@@ -24,7 +29,7 @@
       </activity>
 
       <activity
-          android:name="androidsamples.java.Diary.MainActivity"
+          android:name=".MainActivity"
           android:exported="true">
         <intent-filter>
           <action android:name="android.intent.action.VIEW" />

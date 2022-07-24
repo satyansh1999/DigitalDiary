@@ -7,7 +7,7 @@
 
   <fragment
       android:id="@+id/DayFragment"
-      android:name="androidsamples.java.Diary.DayFragment"
+      android:name="androidsamples.java.DigitalDiary.DayFragment"
       android:label="fragment_entry_list"
       tools:layout="@layout/fragment_day">
     <action
@@ -31,7 +31,7 @@
 
   <fragment
       android:id="@+id/DayEditFragment"
-      android:name="androidsamples.java.Diary.DayEditFragment"
+      android:name="androidsamples.java.DigitalDiary.DayEditFragment"
       android:label="fragment_entry_details"
       tools:layout="@layout/fragment_day_edit">
     <argument
@@ -50,7 +50,7 @@
 
   <fragment
       android:id="@+id/monthFragment"
-      android:name="androidsamples.java.Diary.MonthFragment"
+      android:name="androidsamples.java.DigitalDiary.MonthFragment"
       android:label="fragment_entry_groups"
       tools:layout="@layout/fragment_month">
     <action
@@ -70,14 +70,14 @@
   </fragment>
   <dialog
       android:id="@+id/DatePickerFragment"
-      android:name="androidsamples.java.Diary.DatePickerFragment">
+      android:name="androidsamples.java.DigitalDiary.DatePickerFragment">
     <argument
         android:name="edit"
         app:argType="boolean" />
   </dialog>
   <fragment
       android:id="@+id/monthPicker"
-      android:name="androidsamples.java.Diary.MonthPicker"
+      android:name="androidsamples.java.DigitalDiary.MonthPicker"
       android:label="MonthPicker"
       tools:layout="@layout/fragment_month_picker">
     <argument
@@ -89,7 +89,7 @@
   </fragment>
   <fragment
       android:id="@+id/dayViewFragment"
-      android:name="androidsamples.java.Diary.DayViewFragment"
+      android:name="androidsamples.java.DigitalDiary.DayViewFragment"
       android:label="DayViewFragment"
       tools:layout="@layout/fragment_day_view">
     <action
